@@ -1,0 +1,97 @@
+@import url("//db.onlinewebfonts.com/c/2303f3594424ab346f843c144d3c6434?family=Toxigenesis+Lt");
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #333333;
+  font-family: arial;
+  min-width: 100vw;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Toxigenesis Lt";
+}
+
+.main-content {
+  flex-grow: 1;
+  z-index: 5;
+  position: relative;
+}
+
+.searchweather {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.currentWeather {
+  border: 2px solid white;
+  border-radius: 15px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  left: 70%;
+  padding: 10px 10px;
+}
+.sunny {
+  background: url("./../img/sunny.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.sunny::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+footer {
+  color: whitesmoke;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+  z-index: 5;
+}
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+h1 {
+  font-size: 70pt;
+  margin-bottom: 16px;
+  color: #353535;
+}
+
+.portrait {
+  width: 300px;
+}
+p {
+  font-size: 22px;
+}
+input {
+  height: 40px;
+  width: 240px;
+  border-radius: 20px;
+  outline: none;
+}
+button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: rgb(31, 30, 30);
+  font-weight: bold;
+  outline: none;
+}
+#head img {
+  position: absolute;
+  top: 4%;
+  margin-left: 5px;
+}
